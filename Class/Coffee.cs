@@ -7,31 +7,20 @@ namespace helloworld
         public string name;
         public string description;
         public Store store; 
-        public string picLink;
+        public string recipe;
 
-        public Coffee( string n, string d){
-            name = n;
-            description =d;
-            store= null;
-            picLink = null;
-        }
+
         public Coffee( string n, string d, Store s){
             name = n;
             description =d;
             store = s;   
-            picLink= null;
+            rec= null;
         }
-        public Coffee( string n, string d,string pic){
+        public Coffee( string n, string d,string rec){
             name = n;
             description =d;
             store = null;
-            picLink= pic; 
-        }
-        public Coffee( string n, string d, Store s, string pic){
-            name = n;
-            description =d;
-            store = s;
-            picLink= pic; 
+            recipe= rec; 
         }
         public string getName(){
             return name;
@@ -43,6 +32,9 @@ namespace helloworld
 
         public Store getStore(){
             return store;
+        }
+        public string getRecipe(){
+            return recipe;
         }
     }
 }
