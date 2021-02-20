@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\GEhaErGAZW5GYnnVED2DOCD31swUSWxOIxQLPX2Dha0=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gp5-zIRpIGuSxAHwyjJJbmgUEppW2YYOJsdIOmcRYw8=.hash",
       "Source": "C:\\Users\\Lauren TeBeau\\BrickHack2021\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BrickHack2021.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BrickHack2021.dll.gz"
     },
@@ -261,7 +261,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LFCWYuQmvvYDWeEazgl7CnQCmPMkXLdjA3HtUsY_V8w=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\KxejzJ5X09cq0XXB7e20AaGjKO2DesL5jOZ-58Fu2GU=.hash",
       "Source": "C:\\Users\\Lauren TeBeau\\BrickHack2021\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BrickHack2021.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BrickHack2021.pdb.gz"
     },
@@ -286,7 +286,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\pGoARx9ZJxQ_8P4ftxDDWDMpReodUfkeVLdPkVMEpW0=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\g8O5YDLxylb73Hlsf5klvkx3LIgrMvrb4W3hvVOeESE=.hash",
       "Source": "C:\\Users\\Lauren TeBeau\\BrickHack2021\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }
