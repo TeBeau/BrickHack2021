@@ -1,16 +1,83 @@
 ﻿@page "/submit"
 
-<h1>Counter</h1>
-
-<p>Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<h1>Submit a new coffee</h1>
+ <RadzenTemplateForm Data="@(order)" Visible="@(order != null)" TItem="Order" Submitit="@order">
+        <div class="row">
+            <div class="col-md-6">
+                <RadzenFieldset Text="Coffee Info">
+                    <div class="row">
+                        <div class="col-md-4 align-items-center d-flex">
+                            <RadzenLabel Text="Name of Drink" />
+                        </div>
+                        <div class="col-md-8">
+                            <RadzenTextBox style="width: 100%;" Name="Name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 align-items-center d-flex">
+                            <RadzenLabel Text="Description" />
+                        </div>
+                        <div class="col-md-8">
+                            <RadzenTextBox style="width: 100%;" Name="Descrip" />
+                        </div>
+                    </div>
+                </RadzenFieldset>
+                <RadzenFieldset Text="Contact Info">
+                    <RadzenTabs SelectedIndex="0">
+                        <Tabs>
+                            <RadzenTabsItem Text="Found at a Cafe Near You">
+                                <div class="row">
+                                    <div class="col-md-4 align-items-center d-flex">
+                                        <RadzenLabel Text="location" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <RadzenTextBox style="width: 100%;" Name="Loc" />
+                                    </div>
+                                </div>
+                            </RadzenTabsItem>
+                            <RadzenTabsItem Text="Homemade">
+                                 <div class="row">
+                                    <div class="col-md-4 align-items-center d-flex">
+                                        <RadzenLabel Text="Recipe" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <RadzenTextBox style="width: 100%;" Name="rec" />
+                                    </div>
+                                </div>
+                            </RadzenTabsItem>
+                        </Tabs>
+                    </RadzenTabs>
+                </RadzenFieldset>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12 d-flex align-items-end justify-content-center" style="margin-top: 16px;">
+                    <RadzenButton ButtonType="ButtonType.Submit" Icon="save" Text="Save" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Icon="cancel" style="display: inline-block; margin-left: 10px;" Text="Cancel" Click="@Cancel" />
+                </div>
+            </div>
+        </div>
+    </RadzenTemplateForm>
 
 @code {
-    private int currentCount = 0;
 
-    private void IncrementCount()
+    public class Order
     {
-        currentCount++;
+        public string Name { get; set; }
+        public string Descrip { get; set; }
+        public string Loc { get; set; }
+        public string rec { get; set; }
+
     }
+
+    Order order = new Order(){};
+    void Submitit(Order arg)
+    {
+        //
+    }
+
+    void Cancel()
+    {
+        //
+    }
+}
 }
