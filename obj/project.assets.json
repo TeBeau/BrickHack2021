@@ -2504,19 +2504,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lauren TeBeau\\.nuget\\packages\\": {}
+    "C:\\Users\\jgual\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lauren TeBeau\\BrickHack2021\\BrickHack2021.csproj",
+      "projectUniqueName": "C:\\Users\\jgual\\Documents\\BrickHack2021\\BrickHack2021\\BrickHack2021\\BrickHack2021.csproj",
       "projectName": "BrickHack2021",
-      "projectPath": "C:\\Users\\Lauren TeBeau\\BrickHack2021\\BrickHack2021.csproj",
-      "packagesPath": "C:\\Users\\Lauren TeBeau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lauren TeBeau\\BrickHack2021\\obj\\",
+      "projectPath": "C:\\Users\\jgual\\Documents\\BrickHack2021\\BrickHack2021\\BrickHack2021\\BrickHack2021.csproj",
+      "packagesPath": "C:\\Users\\jgual\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jgual\\Documents\\BrickHack2021\\BrickHack2021\\BrickHack2021\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lauren TeBeau\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jgual\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -2576,7 +2576,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

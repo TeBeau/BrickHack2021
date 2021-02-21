@@ -60,15 +60,17 @@
 
 @code {
     BrickHack2021.Coffee coffee = new BrickHack2021.Coffee(){};
-    void Save(Coffee arg)
+    BrickHack2021.Controllers.Storage coffeeDB = new BrickHack2021.Controllers.Storage();
+    void Save(BrickHack2021.Coffee arg)
     {
-        //
+        coffeeDB.writeToFile(arg);
+        Console.WriteLine(arg.name);
+        Console.WriteLine(coffee.name);
     }
 
     void Cancel()
     {
         //
     }
-}
 }
 
