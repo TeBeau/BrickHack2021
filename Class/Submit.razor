@@ -1,76 +1,59 @@
 ﻿@page "/submit"
+@using System;
+@using System.Collections.Generic;
+@using Microsoft.AspNetCore.Components;
+@using Microsoft.AspNetCore.Components.Forms
+@using BrickHack2021
 
 <h1>Submit a new coffee</h1>
- <RadzenTemplateForm Data="@(coffee)" Visible="@(coffee != null)" TItem="Coffee" Save="@coffee">
+<EditForm Model="@coffee" OnValidSubmit="@HandleValidSubmit">
+    <RadzenFieldset Text="Coffee Info">
         <div class="row">
-            <div class="col-md-6">
-                <RadzenFieldset Text="Coffee Info">
-                    <div class="row">
-                        <div class="col-md-4 align-items-center d-flex">
-                            <RadzenLabel Text="Name of Drink" />
-                        </div>
-                        <div class="col-md-8">
-                            <RadzenTextBox style="width: 100%;" Name="name" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 align-items-center d-flex">
-                            <RadzenLabel Text="Description" />
-                        </div>
-                        <div class="col-md-8">
-                            <RadzenTextBox style="width: 100%;" Name="description" />
-                        </div>
-                    </div>
-                </RadzenFieldset>
-                <RadzenFieldset Text="Contact Info">
-                    <RadzenTabs SelectedIndex="0">
-                        <Tabs>
-                            <RadzenTabsItem Text="Found at a Cafe Near You">
-                                <div class="row">
-                                    <div class="col-md-4 align-items-center d-flex">
-                                        <RadzenLabel Text="location" />
-                                    </div>
-                                    <div class="col-md-8">
-                                        <RadzenTextBox style="width: 100%;" Name="store" />
-                                    </div>
-                                </div>
-                            </RadzenTabsItem>
-                            <RadzenTabsItem Text="Homemade">
-                                 <div class="row">
-                                    <div class="col-md-4 align-items-center d-flex">
-                                        <RadzenLabel Text="Recipe" />
-                                    </div>
-                                    <div class="col-md-8">
-                                        <RadzenTextBox style="width: 100%;" Name="recipe" />
-                                    </div>
-                                </div>
-                            </RadzenTabsItem>
-                        </Tabs>
-                    </RadzenTabs>
-                </RadzenFieldset>
+            <div class="col-md-4 align-items-center d-flex">
+                <RadzenLabel Text="Name of Drink" />
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-12 d-flex align-items-end justify-content-center" style="margin-top: 16px;">
-                    <RadzenButton ButtonType="ButtonType.Submit" Icon="save" Text="Save" />
-                    <RadzenButton ButtonStyle="ButtonStyle.Light" Icon="cancel" style="display: inline-block; margin-left: 10px;" Text="Cancel" Click="@Cancel" />
-                </div>
-            </div>
+            <InputText id="name" @bind-Value="coffee.name" />
         </div>
-    </RadzenTemplateForm>
+        <div class="row">
+            <div class="col-md-4 align-items-center d-flex">
+                <RadzenLabel Text="Description" />
+            </div>
+            <InputText id="description" @bind-Value="coffee.description" />
+        </div>
+    </RadzenFieldset>
+    <RadzenTabs SelectedIndex="0">
+        <Tabs>
+            <RadzenTabsItem Text="Found at a Cafe Near You">
+                <div class="row">
+                    <div class="col-md-4 align-items-center d-flex">
+                        <RadzenLabel Text="location" />
+                    </div>
+                    <div class="col-md-8">
+                        <InputText id="store" @bind-Value="coffee.store" />
+                    </div>
+                </div>
+            </RadzenTabsItem>
+            <RadzenTabsItem Text="Homemade">
+                <div class="row">
+                    <div class="col-md-4 align-items-center d-flex">
+                        <RadzenLabel Text="Recipe" />
+                    </div>
+                    <div class="col-md-8">
+                        <InputText id="recipe" @bind-Value="coffee.recipe" />
+                    </div>
+                </div>
+            </RadzenTabsItem>
+        </Tabs>
+    </RadzenTabs>
+    <RadzenButton ButtonType="ButtonType.Submit" Icon="save" Text="Save" />
+</EditForm>
 
 @code {
-    BrickHack2021.Coffee coffee = new BrickHack2021.Coffee(){};
-    BrickHack2021.Controllers.Storage coffeeDB = new BrickHack2021.Controllers.Storage();
-    void Save(BrickHack2021.Coffee arg)
+    
+    public BrickHack2021.Coffee coffee = new BrickHack2021.Coffee(); 
+    private void HandleValidSubmit()
     {
-        coffeeDB.writeToFile(arg);
-        Console.WriteLine(arg.name);
-        Console.WriteLine(coffee.name);
-    }
-
-    void Cancel()
-    {
-        //
+      Console.WriteLine(coffee.recipe);
     }
 }
 
