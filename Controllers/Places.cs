@@ -2,7 +2,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Net.Http;
 
-namespace helloworld.Controllers
+namespace BrickHack2021.Controllers
 {
     public class Places
     {
