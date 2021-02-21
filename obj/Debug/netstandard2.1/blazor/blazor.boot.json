@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "BrickHack2021.dll": "sha256-aUZPBDMYXIqHqi64H5zpQkPzNRVtITVAa3SwYhDYdMY=",
+      "BrickHack2021.dll": "sha256-RsPXr3zwQP0YfEPDMU9BVrUK\/nC2kpI+QPgZE3kg6zY=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -65,7 +65,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "BrickHack2021.pdb": "sha256-d1BYS6\/xT7kcxLqr9CgB+5GvSqz3r3NhzARNchH1n2w=",
+      "BrickHack2021.pdb": "sha256-imMl4ODk98BpD8p5sQnvEWY1zn5C7vbBEX5lBqkZRpw=",
       "System.Linq.Dynamic.Core.pdb": "sha256-zOBZ+bv44N0h0EaRYZhGqngeYcBonLjpA36C+TrA\/lA="
     },
     "runtime": {
