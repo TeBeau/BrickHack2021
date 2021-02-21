@@ -7,6 +7,8 @@
 
 <RadzenCard Style="width:300px; margin-bottom: 20px; height:500px;">
     <div class="row">
+        <h3>Saved</h3>
+        <RadzenSwitch @bind-Value=@value Style="margin-bottom: 20px" Change=@(args => OnChange(args, "Saved")) />
         <div class="col-md-6">
             <div>Company:</div>
             <b>Name</b>
@@ -28,7 +30,10 @@
 </RadzenCard>
 
 @code {
-
+    bool value;
+    void OnChange(bool? value, string name)
+    {
+    }
         /*
     protected override async Task OnInitializedAsync()
     {

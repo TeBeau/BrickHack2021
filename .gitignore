@@ -178,3 +178,12 @@ obj/Debug/netstandard2.1/integrity/aUZPBDMYXIqHqi64H5zpQkPzNRVtITVAa3SwYhDYdMY=.
 obj/Debug/netstandard2.1/integrity/d1BYS6-xT7kcxLqr9CgB_5GvSqz3r3NhzARNchH1n2w=.hash
 obj/Debug/netstandard2.1/integrity/DGRrJvV1M53Iby6gCCR7OYWptVu1qSe5dBBimtXS_rU=.hash
 obj/Debug/netstandard2.1/integrity/DloUrKeQ83bKlqHuAnYB_RzsGqHnew-S2SUN-LpZVqk=.hash
+bin/Debug/netstandard2.1/BrickHack2021.dll
+bin/Debug/netstandard2.1/BrickHack2021.pdb
+bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json
+bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json.gz
+bin/Debug/netstandard2.1/wwwroot/_framework/_bin/BrickHack2021.dll
+bin/Debug/netstandard2.1/wwwroot/_framework/_bin/BrickHack2021.dll.gz
+bin/Debug/netstandard2.1/wwwroot/_framework/_bin/BrickHack2021.pdb
+bin/Debug/netstandard2.1/wwwroot/_framework/_bin/BrickHack2021.pdb.gz
+.gitignore

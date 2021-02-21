@@ -1,7 +1,7 @@
 ﻿@page "/submit"
-
+<RootNamespace>BrickHack2021
 <h1>Submit a new coffee</h1>
- <RadzenTemplateForm Data="@(order)" Visible="@(order != null)" TItem="Order" Submitit="@order">
+ <RadzenTemplateForm Data="@(coffee)" Visible="@(coffee != null)" TItem="Order" Save="@coffee">
         <div class="row">
             <div class="col-md-6">
                 <RadzenFieldset Text="Coffee Info">
@@ -10,7 +10,7 @@
                             <RadzenLabel Text="Name of Drink" />
                         </div>
                         <div class="col-md-8">
-                            <RadzenTextBox style="width: 100%;" Name="Name" />
+                            <RadzenTextBox style="width: 100%;" Name="name" />
                         </div>
                     </div>
                     <div class="row">
@@ -18,7 +18,7 @@
                             <RadzenLabel Text="Description" />
                         </div>
                         <div class="col-md-8">
-                            <RadzenTextBox style="width: 100%;" Name="Descrip" />
+                            <RadzenTextBox style="width: 100%;" Name="description" />
                         </div>
                     </div>
                 </RadzenFieldset>
@@ -31,7 +31,7 @@
                                         <RadzenLabel Text="location" />
                                     </div>
                                     <div class="col-md-8">
-                                        <RadzenTextBox style="width: 100%;" Name="Loc" />
+                                        <RadzenTextBox style="width: 100%;" Name="store" />
                                     </div>
                                 </div>
                             </RadzenTabsItem>
@@ -41,7 +41,7 @@
                                         <RadzenLabel Text="Recipe" />
                                     </div>
                                     <div class="col-md-8">
-                                        <RadzenTextBox style="width: 100%;" Name="rec" />
+                                        <RadzenTextBox style="width: 100%;" Name="recipe" />
                                     </div>
                                 </div>
                             </RadzenTabsItem>
@@ -59,18 +59,8 @@
     </RadzenTemplateForm>
 
 @code {
-
-    public class Order
-    {
-        public string Name { get; set; }
-        public string Descrip { get; set; }
-        public string Loc { get; set; }
-        public string rec { get; set; }
-
-    }
-
-    Order order = new Order(){};
-    void Submitit(Order arg)
+    BrickHack2021.Coffee coffee = new BrickHack2021.Coffee(){};
+    void Save(Coffee arg)
     {
         //
     }
@@ -81,3 +71,4 @@
     }
 }
 }
+</RootNamespace>
